@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Evaluación ReactJS Unidad III - Agregar interactividad a la UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Cree una aplicación ReactJS con configuración básica inicial usando
+el siguiente comando: npx create-react-app mi-proyectoII-react
 
-## Available Scripts
+   
+2. Cree un componente de función ReactJS que renderice un botón
+cuyo texto sea una props y con un controlador de evento que
+responda al evento onClick sobre el botón en cuestión, esta función
+debe mostrar un alert con el texto del botón.
+   
+3. Cree un componente de función ReactJS con un controlador de
+evento que lea y muestre en pantalla al menos 3 props, que
+responda al evento onClick sobre un botón tanto en el componente
+padre como en el componente hijo. Debe pasarle el valor de una de
+las props al componente Padre.
+   
+4. Cree en un mismo archivo dos componentes, donde uno renderice
+el otro de manera que el evento onClick sea activado en el
+componente hijo se propague hasta el componente padre.
 
-In the project directory, you can run:
+5. En el requerimiento anterior detenga la propagación del evento
+onClick.
 
-### `npm start`
+6. Utilice la función setTimeout y muestre las instantáneas de un
+estado de un componente antes creado, use un contador y un
+botón para cambiar el estado del componente y a media que
+cambie o se actualice (el contador) muestre en pantalla el valor del
+estado que está controlando, también imprima el valor de la
+instantánea anterior de dicho estado.
+   
+7.  Dado el siguiente objeto cree un componente de función React de tal manera que se pueda
+actualizar ese objeto en el estado, modifique las propiedades
+nombre y marca (haga uso del operador de propagación para no
+referenciar ni el objeto principal ni los objetos anidados), haciendo
+uso de inputs tipo text para pasar los valores de las propiedades a
+modificar.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+` {
+ "producto": {
+ "nombre": "Laptop",
+ "precio": 1200,
+ "detalles": {
+ "marca": "XYZ",
+ "modelo": "Pro 15"
+ }
+ }
+}`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+8. Resuelva el requerimiento anterior haciendo uso de la librería
+Immer.
+    
+9. Actualice en el estado de React el siguiente arreglo:
+["perro", "gato", "pato", "caballo", "conejo"];
+Agregando "Ganso", evite modificar el arreglo original.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+10. Use el operador de propagación (…) y modifique del objeto dado en
+el requerimiento (7) la propiedad precio por referencia y la
+propiedad modelo por valor. Use los console.log necesarios para
+comprobar las actualizaciones solicitadas.
 
-### `npm run build`
+11. Cree un repositorio git en el directorio de su aplicación luego de
+resolver todos los requerimientos anteriores y súbalo a su cuenta
+github, suba el enlace del mismo al apartado correspondiente de
+entrega de esta evaluación en el aula virtual de este curso en la
+plataforma virtual de GracoSoft.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Siberia
+##### 15-05-25
