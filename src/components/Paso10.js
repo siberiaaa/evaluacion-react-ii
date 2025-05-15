@@ -13,6 +13,7 @@ function Paso10(){
             }
         };
 
+        // copia por valor para modificar por valor
         const copiaProducto = {
             ...producto,
             detalles: {
@@ -20,10 +21,13 @@ function Paso10(){
             }
         }
 
+        // copia por referencia para modificar por referencia
+        const copiaProductoRef = producto;
+
         console.log(`Objeto copiado`);
         console.log(copiaProducto);
 
-        producto.precio = 666;
+        copiaProductoRef.precio = 666;
 
         copiaProducto.detalles.modelo = "aaa"
 
